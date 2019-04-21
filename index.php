@@ -4,6 +4,8 @@
 	</head>
 	<body>
 <?php
+
+echo $texto;
 	echo "Hello, World!";
 
 	$dados = [
@@ -32,5 +34,6 @@
 		echo "<img src='" . $info["imagem"] . "' />";
 	}
 ?>
+<a href="cpuinfo.php">/cpuinfo.php</a>
 	</body>
 </html>
