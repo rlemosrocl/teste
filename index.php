@@ -15,6 +15,7 @@
 		echo "<h1>Hello " . $i . "</h1>";
 	}
 
+	
 	foreach ($dados as $bicho => $barulho){
 		echo "<p>O " . $bicho . " faz " . $barulho . "</p>";
 	}
