@@ -8,7 +8,9 @@
 
 	$dados = [
 		"Cachorro" => "Au au",
-		"Gato" => "Miau" 	
+		"passaro" => "fiu fiu",
+		"vaca" => "Muuuu...", 	
+		
 	];
 
 	for ($i=0; $i<2; $i++){
