@@ -7,9 +7,18 @@
 	echo "Hello, World!";
 
 	$dados = [
-		"Cachorro" => "Au au",
-		"passaro" => "fiu fiu",
-		"vaca" => "Muuuu...", 	
+		"Cachorro" => [
+			"som" => "Au au",
+			"imagem" => "https://images-na.ssl-images-amazon.com/images/I/71sG1O12uPL.jpg"
+		],
+		"passaro" => [
+			"som" => "fiu fiu",
+			"imagem" => "http://s2.glbimg.com/1kWIO3wpu_PqcAXkK3y-ecyoK2g=/s.glbimg.com/jo/g1/f/original/2015/01/06/carlosalbertocoutinho1.jpg"
+		],
+		"vaca" => [
+			"som" => "Muuuu...",
+			"imagem" => "https://ibahia-cdn1.cworks.cloud/fileadmin/user_upload/ibahia/2018/maio/10/vaca.jpg"
+		]
 		
 	];
 
@@ -18,8 +27,9 @@
 	}
 
 	
-	foreach ($dados as $bicho => $barulho){
-		echo "<p>O " . $bicho . " faz " . $barulho . "</p>";
+	foreach ($dados as $bicho => $info){
+		echo "<p>O " . $bicho . " faz " . $info["som"] . "</p>";
+		echo "<img src='" . $info["imagem"] . "' />";
 	}
 ?>
 	</body>
